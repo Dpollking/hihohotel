@@ -1,0 +1,62 @@
+<svg width="110px" height="90px">
+    <rect class="background" 
+          width="110" 
+          height="90" 
+          rx="5"
+
+    />
+    <rect class="block-min"
+          width="20"
+          height="30"
+          x="10"
+          y="10"
+
+          fill="white"
+    />
+    <rect class="block-min"
+          width="20"
+          height="30"
+          x="10"
+          y="50"
+
+          fill="white"
+    />
+    <rect class="block-max"
+          width="20"
+          height="70"
+          x="40"
+          y="10"
+          fill="white"
+    />
+    <rect class="block-max"
+          width="20"
+          height="70"
+          x="80"
+          y="10"
+          fill="white"
+    />
+    
+<!-- HORIZONTAL -->
+    
+    <rect class="block-horizontal"
+          width="20"
+          height="10"
+          x="20"
+          y="20"
+          fill="white"
+    />
+    <rect class="block-horizontal"
+          width="20"
+          height="10"
+          x="20"
+          y="60"
+          fill="white"
+    />
+    <rect class="block-horizontal"
+          width="20"
+          height="10"
+          x="60"
+          y="40"
+          fill="white"
+    />
+</svg>
