@@ -1,110 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Document</title>
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <div class="conteiner">
-            <header>
-                <a class="main-logo" href="#">
-                    <img src="#" width="100" height="40" alt="Лого">
-                </a>
-                <nav class="main-nav">
-                    <ul>
-                        <li>
-                            <a href="#">Главная</a>
-                        </li>
-                        <li>
-                            <a href="">Услуги</a>
-                        </li>
-                        <li>
-                            <a href="">О нас</a>
-                        </li>
-                        <li>
-                            <a href="">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="user-nav">
-                    <a href="#">Регистрация</a>
-                    <a href="#">Вход</a>
-                </nav>
-            </header>
-            <div class="main-banner">
-                <div class="search">
-                    <form action="#" method="post">
-                        <fieldset>
-                            <legend>Найти наилучшее предложение</legend>
-                            <input type="text" name="room-type" placeholder="Тип номера">
-                            <input type="date" name="arrival-date" placeholder="Дата заезда">
-                            <input type="date" name="departure-date" placeholder="Дата отъезда">
-                            <input type="number" name="number-of-places" min="1" max="4" step="1" placeholder="Количество мест">
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-            <main>
-                <div class="services">
-                    <h2>Услуги</h2>
-                    <div class="services-item">
-                        <h2>Сеть отелей</h2>
-                        <figure>
-                            <img src="#" width="200" height="150" alt="Сеть отелей изображение">
-                            <figcaption>
-                                <p>Выбрать отель</p>
-                                <span>Выбрать отель можно согласно принципам вашего отдыха</span>
-                            </figcaption>
-                        </figure>
-                        <div class="detail">
-                            <a href="#">Подробно</a>
-                        </div>
-                    </div>
-                    <div class="services-item">
-                        <h2>Комнаты</h2>
-                        <figure>
-                            <img src="#" width="200" height="150" alt="Сеть отелей изображение">
-                            <figcaption>
-                                <p>План комнат</p>
-                                <span>План спален, стиль номеров в респектабельном отеле</span>
-                            </figcaption>
-                        </figure>
-                        <div class="detail">
-                            <a href="#">Подробно</a>
-                        </div>
-                    </div>
-                    <div class="services-item">
-                        <h2>Рестораны</h2>
-                        <figure>
-                            <img src="#" width="200" height="150" alt="Сеть отелей изображение">
-                            <figcaption>
-                                <p>Меню</p>
-                                <span>Оцените количество блюд и обстановку в ресторанах</span>
-                            </figcaption>
-                        </figure>
-                        <div class="detail">
-                            <a href="#">Подробно</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="photo-gallery">
-                    <h2>Галерея</h2>
-                    <div class="gallery-block">
-                        <img src="#" width="150" height="100" alt="foto-1">
-                        <img src="#" width="150" height="100" alt="foto-1">
-                        <img src="#" width="150" height="100" alt="foto-1">
-                        <img src="#" width="150" height="100" alt="foto-1">
-                    </div>
-                    <div class="btn-galery">
-                        <a href="#">Назад</a>
-                    </div>
-                    <div class="btn-galery">
-                        <a href="#">Вперёд</a>
-                    </div>
-                    <a href="#">Открыть</a>
-                </div>
-            </main>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hihoho Hotel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="conteiner">
+      <header>
+        <img class="logo" src="#" width="100" height="40" alt="logo">
+        <div class="flex-conteiner">
+          <nav class="navigation-menu">
+            <ul>
+              <li><a href="#">Отели</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Ru</a></li>
+              <li><a href="#">Eng</a></li>
+            </ul>
+          </nav>
+          <nav class="user-menu">
+            <ul>
+              <li><a href="#">Регистрация</a></li>
+              <li><a href="#">Войти</a></li>
+            </ul>
+          </nav>
         </div>
-    </body>
-</html>   
+      </header>
+      <main>
+        <div class="search-menu">
+          <form action="#" method="get">
+            <fieldset>
+              <legend>Поиск отеля</legend>
+              <label for="hotel-room">Тип номера
+                <select id="hotel-room" name="hotel-room">
+                  <option value="single_room">Номер с одной спальней</option>
+                  <option value="double_room">Номер с двуся спальнями</option>
+                  <option value="apartment_room">Апартаменты</option>
+                  <option value="senior_suite">Номер повышенной комфортности</option>
+                  <option value="two_story_room">Двухэтажный номер</option>
+                  <option value="family_room">Семейный номер</option>
+                  <option value="honeymoon_room">Номер для молодожёнов</option>
+                  <option value="studio">Студия</option>
+                </select>
+              </label>
+              <label for="arrival-date">Дата заезда
+                <input id="arrival-date" type="date" name="arrival-date" value="2016-03-15">
+              </label>
+              <label for="departure-date">Дата отъезда
+                <input id="departure-date" type="date" name="departure-date" value="2016-04-15">
+              </label>
+              <label for="guests">Постояльцев
+                <input id="guests" type="number" name="guests" value="1" min="1" max="4">
+              </label>
+              <input class="btn-search" type="submit" name="search-btn" value="Найти">
+            </fieldset>
+          </form>
+        </div>
+        <div class="results-window">
+          <div class="card-room">
+            <div class="image-room"></div>
+            <h1 class="name-hotel">NAME HOTEL</h1>
+            <p class="type-room">TYPE ROOM</p>
+            <p class="discription-room">discription room</p>
+            <p class="cost-room"></p>
+            <a href="#">Заказать</a>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="contact-information">
+          <p>
+            Беларусь, г.Минск <br>
+            ул. Я.Коласа, д.26 <br>
+            тел. 202-03-27
+          </p>
+        </div>
+        <div class="social-btn">
+          <p>Мы в соц. сетях</p>
+          <a class="btn vk" href="#">Контик</a>
+          <a class="btn facebook" href="#">Фэйсбучёк</a>
+          <a class="btn twitter" href="#">Твиттерок</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
