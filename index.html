@@ -9,14 +9,14 @@
   <body>
     <div class="conteiner">
       <header>
-        <img class="logo" src="#" width="100" height="40" alt="logo">
+        <img class="logo" src="img/logo-1.png" width="100" height="40" alt="logo">
         <div class="flex-conteiner">
           <nav class="navigation-menu">
             <ul>
               <li><a href="#">Отели</a></li>
               <li><a href="#">Услуги</a></li>
               <li><a href="#">О нас</a></li>
-              <li><a href="#">Ru</a></li>
+              <li><a class="active" href="#">Ru</a></li>
               <li><a href="#">Eng</a></li>
             </ul>
           </nav>
@@ -30,6 +30,7 @@
       </header>
       <main>
         <div class="search-menu">
+          <div class="search-conteiner">
           <form action="#" method="get">
             <fieldset>
               <legend>Поиск отеля</legend>
@@ -57,15 +58,20 @@
               <input class="btn-search" type="submit" name="search-btn" value="Найти">
             </fieldset>
           </form>
+          </div>
         </div>
         <div class="results-window">
-          <div class="card-room">
-            <div class="image-room"></div>
-            <h1 class="name-hotel">NAME HOTEL</h1>
-            <p class="type-room">TYPE ROOM</p>
-            <p class="discription-room">discription room</p>
-            <p class="cost-room"></p>
-            <a href="#">Заказать</a>
+          <div class="results-conteiner">
+          <!-- <template id="hotel-template" style="display: none"> -->
+            <div class="card-room">
+              <div class="image-room"></div>
+              <h1 class="name-hotel"><a href="#">Гостинница Минск</a></h1>
+              <p class="type-room">Номер для молодожёнов</p>
+              <p class="discription-room">Роскошный отель Radisson Blu Sobieski располагается в 1 км от центра Варшавы. В отеле запрещено курить. В распоряжении гостей изящно оформленные номера, превосходная кухня, удобства для отдыха, а также бесплатный Wi-Fi.</p>
+              <p class="cost-room">Цена: 100500 р.</p>
+              <a class="btn-card-room" href="#">Заказать</a>
+            </div>
+          <!-- </template> -->
           </div>
         </div>
       </main>
@@ -78,10 +84,9 @@
           </p>
         </div>
         <div class="social-btn">
-          <p>Мы в соц. сетях</p>
-          <a class="btn vk" href="#">Контик</a>
-          <a class="btn facebook" href="#">Фэйсбучёк</a>
-          <a class="btn twitter" href="#">Твиттерок</a>
+          <a class="btn vk" href="#"><span class="icon-youtube"></span></a>
+          <a class="btn facebook" href="#"><span class="icon-facebook"></span></a>
+          <a class="btn twitter" href="#"><span class="icon-twitter"></span></a>
         </div>
       </footer>
     </div>
